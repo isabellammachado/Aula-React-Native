@@ -1,12 +1,13 @@
 
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1, //o quanto ocupa da tela, o maximo é 1 q é 100%
     // width: '80%',
     // height: '70%',
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
+    backgroundColor: Platform.OS === 'android' ? 'green': '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
